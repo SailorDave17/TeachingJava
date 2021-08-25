@@ -20,7 +20,7 @@ public class Cities {
         countries[2]= "Mexico";
         System.out.println(countries[2]);
 
-        System.out.println("---------------------------------------");
+
 
         //Declare & define the array (only size)
         String[] states = new String[5];
@@ -42,6 +42,9 @@ public class Cities {
         int i = 0;
 
         //Do Loop: Enters the loop, THEN tests the condition
+
+        System.out.println("--------------------------------------");
+        System.out.println("Printing with a Do While Loop");
         do{
             System.out.println("State: " + states[i]);
             i++;
@@ -63,6 +66,11 @@ public class Cities {
         }
 
         //For Loop: Best structure for iterating through an array
+        System.out.println("--------------------------------------");
+        System.out.println("Printing with a For loop");
+        for (int x = 0; x < 5; x++){
+            System.out.println(states[x]);
+        }
 
 
 
