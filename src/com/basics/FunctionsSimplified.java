@@ -3,9 +3,9 @@ package com.basics;
 public class FunctionsSimplified {
 
     public static void main(String[] args) {
-        printName();
         int numA = 5;
         int numB = 2;
+        printName();
         addNumbers(numA, numB);
         multiplyNumbers(numA, numB);
 
@@ -17,6 +17,8 @@ public class FunctionsSimplified {
         String name = "Dave";
         System.out.println("My name is " + name);
     }
+
+
 
     static void addNumbers(int numberA, int numberB){
        int sum = numberA + numberB;
