@@ -35,15 +35,14 @@ public class LabOneC {
     }
 
     public static int getAve(int[]arrayInput){
-        int aveValue;
         int totalValue = 0;
         for (int i = 0; i<arrayInput.length; i++){
             totalValue = totalValue + arrayInput[i];
 
         }
 
-        aveValue = totalValue/arrayInput.length;
-        return aveValue;
+        return totalValue/arrayInput.length;
+
     }
 
 
