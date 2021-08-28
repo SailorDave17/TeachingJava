@@ -1,6 +1,6 @@
 package com.basics;
 
-public class ArrayMinMaxAverage {
+public class LabOneC {
     public static void main(String[] args) {
         int myArray[] = new int[]{2,1,6,8,9,4};
         int max = getMax(myArray);
