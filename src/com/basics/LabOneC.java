@@ -15,7 +15,7 @@ public class LabOneC {
 
     public static int getMin(int[]arrayInput){
         int minValue = arrayInput[0];
-        for(int i =1; i<arrayInput.length; i++){
+        for(int i =0; i<arrayInput.length; i++){
             if(arrayInput[i] < minValue){
                 minValue = arrayInput[i];
             }
@@ -26,7 +26,7 @@ public class LabOneC {
 
     public static int getMax(int[]arrayInput){
         int maxValue = arrayInput[0];
-        for (int i=1 ; i < arrayInput.length; i++){
+        for (int i=0 ; i < arrayInput.length; i++){
             if(arrayInput[i]>maxValue){
                 maxValue = arrayInput[i];
             }
