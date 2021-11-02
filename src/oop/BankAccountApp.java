@@ -6,15 +6,26 @@ public class BankAccountApp {
 
         BankAccount account1 = new BankAccount();
         account1.accountNumber = "0123456789";
+        account1.name = "Dave A";
+        System.out.println(account1);
 
         BankAccount account2 = new BankAccount("Checking Account");
         account2.accountNumber = "7894561233";
 
         BankAccount account3 = new BankAccount("Savings Account", 10000);
-        account3.accountNumber = "6546854";
+        BankAccount.accountNumber = "6546854";
+        account3.checkBalance();
 
-        System.out.println(account1.routingNumber);
-        System.out.println(account2.routingNumber);
-        System.out.println(account3.routingNumber);
+        //Demo for Inheritance
+        CDAccount cd1 = new CDAccount();
+        cd1.balance = 3000;
+        cd1.interestRate = "4.5";
+        cd1.name = "Mary";
+        cd1.accountType = "CD Account";
+        System.out.println(cd1);
+        cd1.compound();
+
+
+
     }
 }

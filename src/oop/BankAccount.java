@@ -3,14 +3,15 @@ package oop;
 public class BankAccount {
 // Define Variables
 
-    String accountNumber;
+    static String accountNumber = "045528";
 
     //static >> belongs to the CLASS, not the object instance
     //final>> constant (you will often see static final)
-    static final String routingNumber = "000000";
+    private static final String routingNumber = "000000";
     String name;
     String ssn;
     String accountType;
+    double balance;
 
     //Constructor definitions: unique methods
         //1. They are used to define/setup/initialize properties of an object
@@ -46,11 +47,19 @@ public class BankAccount {
     void withdraw(){
 
     }
+
+    private void showActivity(){
+        System.out.println("show recent activity");
+    }
     void checkBalance(){
 
     }
 
     void getStatus(){
 
+    }
+    @Override
+    public String toString(){
+        return "[" + name  + accountNumber + " Balance: $" + balance + " ]";
     }
 }
