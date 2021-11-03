@@ -60,6 +60,6 @@ public class BankAccount {
     }
     @Override
     public String toString(){
-        return "[" + name  + accountNumber + " Balance: $" + balance + " ]";
+        return "[ Name: "+ name + "Account Number: " + accountNumber + "Balance: $:" + balance +"]";
     }
 }
