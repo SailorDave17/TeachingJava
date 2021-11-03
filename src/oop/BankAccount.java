@@ -41,15 +41,20 @@ public class BankAccount {
 
     //Define Methods
 
-    void deposit(){
+    void deposit(double depositAmount){
+        balance = balance + depositAmount;
+        showActivity("Deposit");
 
     }
-    void withdraw(){
+    void withdraw(double withdrawAmount){
+        balance = balance + withdrawAmount;
+        showActivity("Withdraw");
 
     }
 
-    private void showActivity(){
-        System.out.println("show recent activity");
+    private void showActivity(String activity){
+        System.out.println("Your recent transaction: " + activity);
+        System.out.println("Your new balance is $: " + balance);
     }
     void checkBalance(){
 
@@ -60,6 +65,6 @@ public class BankAccount {
     }
     @Override
     public String toString(){
-        return "[ Name: "+ name + "Account Number: " + accountNumber + "Balance: $:" + balance +"]";
+        return "[Name: "+ name + ". Account Number: " + accountNumber + ". Balance: $:" + balance +"]";
     }
 }
