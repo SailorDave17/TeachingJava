@@ -3,11 +3,11 @@ package oop;
 public class BankAccount {
 // Define Variables
 
-    static String accountNumber = "045528";
+    static String accountNumber = "";
 
     //static >> belongs to the CLASS, not the object instance
     //final>> constant (you will often see static final)
-    private static final String routingNumber = "000000";
+    private static final String routingNumber = "0452365";
     String name;
     String ssn;
     String accountType;
@@ -51,6 +51,7 @@ public class BankAccount {
         showActivity("Withdraw");
 
     }
+// Private can only be called from within the class
 
     private void showActivity(String activity){
         System.out.println("Your recent transaction: " + activity);
@@ -65,6 +66,6 @@ public class BankAccount {
     }
     @Override
     public String toString(){
-        return "[Name: "+ name + ". Account Number: " + accountNumber + ". Balance: $:" + balance +"]";
+        return "[Name: "+ name + ". Account Number: " + accountNumber + ". Routing Number: " + routingNumber + ". Balance: $:" + balance +"]";
     }
 }

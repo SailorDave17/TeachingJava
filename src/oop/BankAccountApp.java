@@ -7,6 +7,15 @@ public class BankAccountApp {
         BankAccount account1 = new BankAccount();
         account1.accountNumber = "0123456789";
         account1.name = "Dave A";
+        account1.balance = 1000;
+
+
+        account1.deposit(1500);
+        account1.deposit(1500);
+        account1.deposit(1500);
+        account1.deposit(1500);
+        account1.withdraw(2000);
+
         System.out.println(account1);
 
         BankAccount account2 = new BankAccount("Checking Account");
